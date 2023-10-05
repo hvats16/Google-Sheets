@@ -15,7 +15,6 @@ for (let i = 0; i < rows; i++) {
 }
 
 //Put the value A-Z in columns
-
 for (let i = 0; i < cols; i++) {
   let adressRow = document.createElement("div");
   adressRow.setAttribute("class", "address-row");
@@ -37,6 +36,7 @@ for (let i = 0; i < rows; i++) {
   cellCont.append(rowCont);
 }
 
+//Function to show row and column in address bar
 function addListenerForAddressbarDisplay(cell, i, j) {
   cell.addEventListener("click", (e) => {
     let rowId = i + 1;
